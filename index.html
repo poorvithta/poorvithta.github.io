@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Poorvith T.A</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Poorvith T.A's Playground </h1>
+    <p>Welcome to my world of web games & tools! Explore, play, and enjoy the magic of code.</p>
+    
+    <!-- Theme Toggle Switch -->
+    <div class="toggle-container">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+      <span class="toggle-text">Dark Mode</span>
+    </div>
+  </header>
+
+  <div class="projects">
+
+    <div class="card">
+      <h2><span class="emoji">🕵️</span><span class="gradient-text"> Stickman Word Guesser</span></h2>
+      <p>Guess the hidden word and save our little stickman from peril!</p>
+      <a href="https://poorvithta.github.io/stickman/" target="_blank">Play</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">🧱</span><span class="gradient-text"> Tetris</span></h2>
+      <p>Enjoy the nostalgic feeling of the classic falling block game.</p>
+      <a href="https://poorvithta.github.io/tetris/" target="_blank">Play</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">🔊</span><span class="gradient-text"> Text-to-Speech</span></h2>
+      <p>Convert any text into lifelike voice audio using web speech tech.</p>
+      <a href="https://texttospeech-tts.netlify.app/" target="_blank">Try It</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">❌⭕</span><span class="gradient-text"> Tic-Tac-Toe (XOX)</span></h2>
+      <p>Challenge your friends or test your logic in classic XOX style!</p>
+      <a href="https://poorvithta.github.io/tic-tac-toe/" target="_blank">Play</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">📅</span><span class="gradient-text"> Mr Ager</span></h2>
+      <p>Calculate your exact age in years, months, days, and more instantly with Mr Ager!</p>
+      <a href="https://poorvithta.github.io/mr.ager/" target="_blank">Calculate</a>
+    </div>
+
+    <div class="card">
+      <h2><span class="emoji">🕛</span><span class="gradient-text"> World Clock</span></h2>
+      <p>A website that displays the current time across all global time zones in real-time!!</p>
+      <a href="https://poorvithta.github.io/world-clock/" target="_blank">Check</a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Poorvith T.A • <a href="https://ig.me/m/i_am_poorvith" target="_blank">Contact Me</a> 
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("theme-toggle");
+    const body = document.body;
+    toggle.addEventListener("change", () => {
+      body.classList.toggle("dark-theme");
+    });
+  </script>
+</body>
+</html>
