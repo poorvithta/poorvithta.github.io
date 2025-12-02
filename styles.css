@@ -1,6 +1,5 @@
-/* === General Styles === */
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family:DM Sans, sans-serif;
   background: linear-gradient(135deg, #f0f4ff, #ffffff);
   color: #1b2028;
   margin: 0;
@@ -20,16 +19,24 @@ header {
 h1 {
   font-size: 2.5rem;
   margin: 0;
-  background: linear-gradient(90deg, #4facfe, #00f2fe);
+  background: linear-gradient(90deg, #4d4c4e, #000000);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-p {
-  font-size: 1.1rem;
+.category-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #0f94c9, #6dd5fa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
-/* === Project Cards === */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -45,7 +52,6 @@ p {
   padding: 1.5rem;
   width: 260px;
   transition: transform 0.2s, box-shadow 0.2s;
-  color: inherit;
 }
 
 .card:hover {
@@ -70,8 +76,7 @@ p {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
-/* === Heading Text & Emojis === */
-.card h2 {
+.card h3 {
   font-size: 1.3rem;
   display: flex;
   justify-content: center;
@@ -82,29 +87,27 @@ p {
 
 .emoji {
   font-size: 1.6rem;
+  text-decoration: none;
+  color: none;
+  font-family: Noto Emoji, sans-serif;
 }
 
 .gradient-text {
   background: linear-gradient(90deg, #2980b9, #6dd5fa);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
-  font-weight: 700;
+  -webkit-text-fill-color: transparent;
 }
 
-/* === Footer === */
 footer {
   margin-top: 4rem;
   padding: 1rem;
   font-size: 0.95rem;
-  color: #333;
   background: linear-gradient(90deg, #e0eafc, #cfdef3);
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
 
-/* === Toggle Switch === */
 .toggle-container {
   margin-top: 1.5rem;
   display: flex;
@@ -122,8 +125,6 @@ footer {
 
 .switch input {
   opacity: 0;
-  width: 0;
-  height: 0;
 }
 
 .slider {
@@ -136,48 +137,36 @@ footer {
 }
 
 .slider:before {
-  position: absolute;
   content: "";
+  position: absolute;
   height: 22px;
   width: 22px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
+  background: white;
   border-radius: 50%;
   transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #4fbdba;
+  background-color: #da430d;
 }
 
 input:checked + .slider:before {
   transform: translateX(24px);
 }
 
-.slider.round {
-  border-radius: 34px;
-}
-
-.toggle-text {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
-/* === Dark Theme === */
 body.dark-theme {
-  background: linear-gradient(135deg, #181c25 0%, #35377a 100%);
+  background: linear-gradient(135deg, #181c25, #35377a);
   color: #e0e6f3;
 }
 
 body.dark-theme header {
-  background: linear-gradient(90deg, #431969 0%, #2e3a8c 100%);
-  color: #fff;
+  background: linear-gradient(90deg, #431969, #2e3a8c);
 }
 
 body.dark-theme .card {
-  background: linear-gradient(120deg, #232949 0%, #2f2f5a 100%);
-  color: #e0e6f3;
+  background: linear-gradient(120deg, #232949, #2f2f5a);
 }
 
 body.dark-theme .card a {
@@ -185,6 +174,10 @@ body.dark-theme .card a {
 }
 
 body.dark-theme footer {
-  background: linear-gradient(90deg, #1a202c 0%, #202545 100%);
-  color: #d3d6ef;
+  background: linear-gradient(90deg, #1a202c, #202545);
 }
+
+body.dark-theme h1{  background: linear-gradient(90deg, #e18505, #08e664);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;}
