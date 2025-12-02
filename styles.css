@@ -1,5 +1,5 @@
 body {
-  font-family:DM Sans, sans-serif;
+  font-family: DM Sans, sans-serif;
   background: linear-gradient(135deg, #f0f4ff, #ffffff);
   color: #1b2028;
   margin: 0;
@@ -181,3 +181,4 @@ body.dark-theme h1{  background: linear-gradient(90deg, #e18505, #08e664);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;}
+
